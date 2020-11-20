@@ -54,6 +54,6 @@ function saveMessage(email) {
     newEmailRef.set({
         email: email,
     });
-    window.location.href = "/thanks.html";
+    window.location.href = "https://bduhre.github.io/Assign4Nov15/thanks.html";
 
 }
