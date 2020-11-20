@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 1.42857143;
+}
+
+
+/* Nav Styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper>.left-side>div {
+    margin-right: 20px;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22 px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #080707;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(252, 5, 5);
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: -webkit-gradient( linear, left bottom, left top, from(#09203f), to(#1c3e58));
+    background-image: linear-gradient(to top, #09203f 0%, #1c3e58 100%);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+main {
+    margin: auto;
+}
+
+.modal {
+    background: #e55039;
+    color: #fff;
+    width: 60rem;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10rem 4rem 4rem 4rem;
+    position: relative;
+}
+
+.modal__icon {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    margin-left: -165px;
+    background: #e55039;
+    padding: 3rem 12rem 0 12rem;
+    border-radius: 50%;
+}
+
+.modal__heading {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+.modal p {
+    font-size: 1.5rem;
+}
+
+.email-box {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    margin-left: -20rem;
+    width: 40rem;
+}
+
+.email-box__input {
+    color: #333333;
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.input-box {
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.email-box__button {
+    position: relative;
+    color: rgb(31, 22, 22);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("images/images/cafe.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*.email-box__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    position: absolute;
+    color: #e55039;
+    right: 0.8rem;
+    top: 0.8rem;
+    padding: 0;
+}*/
+
+.email-box__button:hover,
+.email-box__button:focus {
+    color: #a32815;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal {
+        width: 30rem;
+    }
+    .modal__icon {
+        margin-left: -105px;
+        padding: 3rem 6rem 0 6rem;
+        border-radius: 50%;
+    }
+    .email-box {
+        margin-left: -12.5rem;
+        width: 25rem;
+    }
+}
