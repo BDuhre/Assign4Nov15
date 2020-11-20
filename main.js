@@ -54,4 +54,6 @@ function saveMessage(email) {
     newEmailRef.set({
         email: email,
     });
+    window.location.href = "thanks.html";
+
 }
